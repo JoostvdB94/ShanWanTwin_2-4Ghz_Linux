@@ -1,0 +1,2 @@
+ACTION=="add", ENV{ID_VENDOR_ID}=="2563", ENV{ID_MODEL_ID}=="0555", ENV{ID_INPUT_JOYSTICK}="", MODE="0600"
+KERNEL=="hidraw*", ATTRS{busnum}=="1", ATTRS{idVendor}=="2563", ATTRS{idProduct}=="0555", RUN+="/opt/ShanWanTwin_2-4Ghz_Linux/shanwan-joystick.py %E{DEVNAME}"
